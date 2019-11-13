@@ -12,13 +12,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
-
-if os.environ.get('DEVELOPMENT'):
-    development = True
-else:
-    development = False
-
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -27,10 +20,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = '!_yl1%rgi@m8!4^gr)1hw0s4__(_y43@)gsqe7$iwg2@2s4(2k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = development
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -137,6 +130,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRs = (
+    os.path.join(BASE_DIR, "static"),
+)
+
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
