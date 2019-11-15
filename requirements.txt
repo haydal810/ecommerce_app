@@ -1,4 +1,6 @@
 autopep8==1.4.4
+certifi==2019.9.11
+chardet==3.0.4
 Click==7.0
 dj-database-url==0.5.0
 Django==1.11.24
@@ -8,6 +10,7 @@ dnspython==1.16.0
 Flask==1.1.1
 Flask-PyMongo==2.3.0
 gunicorn==19.9.0
+idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
@@ -16,4 +19,7 @@ psycopg2==2.8.4
 pycodestyle==2.5.0
 pymongo==3.9.0
 pytz==2019.3
+requests==2.22.0
+stripe==2.40.0
+urllib3==1.25.7
 Werkzeug==0.16.0
